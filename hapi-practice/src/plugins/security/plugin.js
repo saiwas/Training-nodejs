@@ -6,8 +6,8 @@ const Plugin = function Plugin() {
     this.options = {};
 };
 
-
 Plugin.prototype = Object.assign(Plugin.prototype, {
+    config: require('./methods/config'),
     login: require('./methods/login'),
     reg: require('./methods/reg')
 });

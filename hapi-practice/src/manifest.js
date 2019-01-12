@@ -1,6 +1,7 @@
 'use strict';
 
 const packageInfo = require(__dirname + '/../package.json');
+const config = require('./config');
 
 /**
  * Manifest for the Service.
@@ -38,13 +39,16 @@ const manifest = {
                 }
             },
             {
-                plugin : require('./plugins/category/plugin')
+                plugin : require('./plugins/category/plugin'),
+                options: config
             },
             {
-                plugin : require('./plugins/menuItem/plugin')
+                plugin : require('./plugins/menuItem/plugin'),
+                options: config
             },
             {
-                plugin : require('./plugins/security/plugin')
+                plugin : require('./plugins/security/plugin'),
+                options: config
             }
         ]
     }

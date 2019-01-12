@@ -6,8 +6,13 @@ const Plugin = function Plugin() {
     this.options = {};
 };
 
-
-Plugin.prototype = Object.assign(Plugin.prototype, {});
+Plugin.prototype = Object.assign(Plugin.prototype, {
+    config: require('./methods/config'),
+    add: require('./methods/add'),
+    delete: require('./methods/delete'),
+    select: require('./methods/select'),
+    update: require('./methods/update')
+});
 
 const register = async function(server, options) {
     const instance = new Plugin();
