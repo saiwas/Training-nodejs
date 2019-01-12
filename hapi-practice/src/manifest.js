@@ -38,8 +38,13 @@ const manifest = {
                 }
             },
             {
-                plugin : require('./plugins/test-plugin/plugin'),
-                options: require('./config')
+                plugin : require('./plugins/category/plugin')
+            },
+            {
+                plugin : require('./plugins/menuItem/plugin')
+            },
+            {
+                plugin : require('./plugins/security/plugin')
             }
         ]
     }
