@@ -23,6 +23,7 @@
   "author": "Johnny",
   "license": "ISC",
   "devDependencies": {
+    "blipp": "3.1.2",
     "chai": "4.x.x",
     "eslint": "4.x.x",
     "mocha": "4.x.x",

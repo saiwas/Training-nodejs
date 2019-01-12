@@ -25,6 +25,9 @@ const manifest = {
                 plugin: 'inert'
             },
             {
+                plugin: 'blipp'
+            },
+            {
                 plugin: 'vision'
             },
             {
